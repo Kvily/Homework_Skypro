@@ -2,7 +2,9 @@
 *.iml
 .idea/
 out/
+*.xml
 !**/src/main/**/out/
+!**/src/hw4_cycles_lesson1/
 !**/src/test/**/out/
 
 ### Eclipse ###
@@ -29,3 +31,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/hw4_cycles_lesson1/
+/src/hw4_cycles_lesson1/
