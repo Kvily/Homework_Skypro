@@ -25,7 +25,10 @@ public class Task3 {
         System.out.print("Массив в обратном порядке: ");
 
         for (int i = arr1.length - 1; i >= 0; i--) {
-            System.out.print(arr1[i] + " ");
+           System.out.print(arr1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
 
         double[] arr2 = {9.986, 7.654, 1.57};
@@ -35,7 +38,10 @@ public class Task3 {
 
         System.out.print("Массив в обратном порядке: ");
         for (int i = arr2.length - 1; i >= 0; i--) {
-            System.out.print(arr2[i] + "  ");
+            System.out.print(arr2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
 
         char[] arr3 = {'L', 'I', 'V', 'E'};
@@ -44,7 +50,10 @@ public class Task3 {
         System.out.print("Массив в обратном порядке: ");
 
         for (int i = arr3.length - 1; i >= 0; i--) {
-            System.out.print(arr3[i] + "  ");
+            System.out.print(arr3[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
     }
 }

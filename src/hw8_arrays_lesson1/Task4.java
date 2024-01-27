@@ -20,7 +20,10 @@ public class Task4 {
             if (arr1[i] % 2 == 0) {
                 arr1[i]++;
             }
-            System.out.print(arr1[i] + "  ");
+            if (i != 0) {
+                System.out.print(", ");
+            }
+            System.out.print(arr1[i] + "");
         }
 
 
@@ -33,7 +36,10 @@ public class Task4 {
             if (arr2[i] % 2 != 0) {
                 arr2[i]++;
             }
-            System.out.print(arr2[i] + "  ");
+            if (i != 0) {
+                System.out.print(", ");
+            }
+            System.out.print(arr2[i] + "");
         }
     }
 }
