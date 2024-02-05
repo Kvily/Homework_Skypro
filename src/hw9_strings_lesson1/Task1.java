@@ -17,6 +17,24 @@ public class Task1 {
         //
         //В качестве данных для задачи используйте Ivanov Ivan Ivanovich.*//
 
+//        String firstName = "Ivan";
+//        String middleName = "Ivanovich";
+//        String lastName = "Ivanov";
+//        String fullName = firstName + middleName + lastName;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Введите имя: ");
+        String firstName = scan.nextLine();
+
+        System.out.print("Введите фамилию: ");
+        String lastName = scan.nextLine();
+
+        System.out.print("Введите отчество: ");
+        String middleName = scan.nextLine();
+
+        String fullname = String.join(" ", lastName, firstName, middleName);
+        System.out.println(fullname);
 
     }
 }
