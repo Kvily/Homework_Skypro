@@ -2,24 +2,22 @@ package hw10_objects_and_classes;
 
 public class Main {
     public static void main(String[] args) {
-        Author author_1 = new Author("Лев", "Толстой");
-        Book book_1 = new Book(author_1.getFirstnameAuthor(), "Война и Мир", 1867);
+        Author oneAuthor = new Author("Лев", "Толстой");
+        Book oneBook = new Book(oneAuthor.getFirstnameAuthor(), "Война и Мир", 1867);
 
-        Author author_2 = new Author("Иван", "Тургенев");
-        Book book_2 = new Book(author_1.getFirstnameAuthor(), "Отцы и дети", 1862);
+        Author twoAuthor = new Author("Иван", "Тургенев");
+        Book twoBook = new Book(oneAuthor.getFirstnameAuthor(), "Отцы и дети", 1862);
 
-        System.out.println("Имя автора: " + author_1.getFirstnameAuthor() +
-                " " + author_1.getSurnameAuthor() +
-                "\nНазвание книги: " + book_1.getNameBook() +
-                "\nГод издания: " + book_1.getYearBook());
+        System.out.println("Имя автора: " + oneAuthor +
+                "\nНазвание книги: " + oneBook.getNameBook() +
+                "\nГод издания: " + oneBook.getYearBook());
 
-        book_1.setYearBook(2021);
-        System.out.println("Год издания: " + book_1.getYearBook());
+        oneBook.setYearBook(2021);
+        System.out.println("Год издания: " + oneBook.getYearBook());
 
         System.out.println("___________________________");
-        System.out.println("Имя автора: " + author_2.getFirstnameAuthor() +
-                " " + author_2.getSurnameAuthor() +
-                "\nНазвание книги: " + book_2.getNameBook() +
-                "\nГод издания: " + book_2.getYearBook());
+        System.out.println("Имя автора: " + twoAuthor +
+                "\nНазвание книги: " + twoBook.getNameBook() +
+                "\nГод издания: " + twoBook.getYearBook());
     }
 }
