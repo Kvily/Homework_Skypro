@@ -1,6 +1,7 @@
 package hw10_objects_and_classes;
 
 public class Book {
+
     private String nameBook;
     public int yearBook;
     private Author author;
