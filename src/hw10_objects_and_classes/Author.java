@@ -8,11 +8,9 @@ public class Author {
         this.firstnameAuthor = firstnameAuthor;
         this.surnameAuthor = surnameAuthor;
     }
-
     public String getFirstnameAuthor() {
         return this.firstnameAuthor;
     }
-
     public String getSurnameAuthor() {
         return this.surnameAuthor;
     }

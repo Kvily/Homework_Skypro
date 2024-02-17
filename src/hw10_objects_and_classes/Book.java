@@ -14,7 +14,6 @@ public class Book {
     public String getNameBook() {
         return this.nameBook;
     }
-
     public int getYearBook() {
         return this.yearBook;
     }

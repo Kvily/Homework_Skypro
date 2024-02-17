@@ -2,7 +2,6 @@ package hw10_objects_and_classes;
 
 public class Main {
     public static void main(String[] args) {
-
         Author oneAuthor = new Author("Лев", "Толстой");
         Book oneBook = new Book(oneAuthor.getFirstnameAuthor(), "Война и Мир", 1867);
 
