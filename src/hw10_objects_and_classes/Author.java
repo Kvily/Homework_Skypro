@@ -13,7 +13,7 @@ public class Author {
         return this.firstnameAuthor;
     }
 
-    public  String getSurnameAuthor(){
-        return  this.surnameAuthor;
+    public String getSurnameAuthor() {
+        return this.surnameAuthor;
     }
 }

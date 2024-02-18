@@ -1,12 +1,11 @@
 package hw10_objects_and_classes;
 
 public class Book {
-
     private String nameBook;
     public int yearBook;
     private Author author;
 
-    public Book(String authorBook, String nameBook, int yearBook) {
+    public Book(Author author, String nameBook, int yearBook) {
         this.nameBook = nameBook;
         this.yearBook = yearBook;
         this.author = author;
