@@ -1,5 +1,7 @@
 package hw10_objects_and_classes;
 
+import java.util.Objects;
+
 public class Book {
     private String nameBook;
     public int yearBook;
@@ -33,12 +35,11 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Book bookEquals = (Book) other;
-        return nameBook.equals(bookEquals.nameBook);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
     }
 
     @Override
