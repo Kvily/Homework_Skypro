@@ -105,5 +105,4 @@ public class Main {
     public static void printSeparator() {
         System.out.println("*************************************************************************************************");
     }
-
 }
