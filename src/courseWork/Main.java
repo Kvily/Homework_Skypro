@@ -1,9 +1,6 @@
 package courseWork;
 
-import courseWorkTest1.Employee1;
-
 public class Main {
-    private final Employee[] employees = new Employee[10];
 
     public static void main(String[] args) {
         Employee[] emplCorp = new Employee[10];
@@ -52,8 +49,8 @@ public class Main {
     public static int calculateAllSalary(Employee[] employees) {
         System.out.print("Зарплата всех сотрудников за месяц: ");
         double allSalary = 0;
-        for (int i = 0; i < employees.length; i++) {
-            allSalary += +employees[i].getSalary();
+        for (Employee employee : employees) {
+            allSalary += employee.getSalary();
         }
         System.out.println(allSalary + " рублей.");
         return (int) allSalary;
@@ -92,9 +89,9 @@ public class Main {
     public static int calculateMediumSalary(Employee[] employees) {
         System.out.print("Средняя зарплата всех сотрудников по офису: ");
         double allSalary = 0;
-        double medSalary = 0;
-        for (int i = 0; i < employees.length; i++) {
-            allSalary = (allSalary + employees[i].getSalary());
+        double medSalary;
+        for (Employee employee : employees) {
+            allSalary = (allSalary + employee.getSalary());
         }
         medSalary = allSalary / employees.length;
 
