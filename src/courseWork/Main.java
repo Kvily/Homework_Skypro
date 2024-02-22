@@ -2,6 +2,7 @@ package courseWork;
 
 public class Main {
     public static void main(String[] args) {
+
         Employee[] emplCorp = new Employee[10];
         emplCorp[0] = new Employee("Иванов Иван Иванович", 5, 10350);
         emplCorp[1] = new Employee("Жилина Арина Руслановна", 1, 12000);
