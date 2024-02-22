@@ -1,7 +1,6 @@
 package courseWork;
 
 public class Main {
-
     public static void main(String[] args) {
         Employee[] emplCorp = new Employee[10];
         emplCorp[0] = new Employee("Иванов Иван Иванович", 5, 10350);
@@ -32,9 +31,9 @@ public class Main {
 
     public static void listEmployee(Employee[] employees) {
         System.out.println("ФИО сотрудников фирмы:");
-        for (Employee i : employees) {
-            if (i != null) {
-                System.out.println(i.getNameFull());
+        for (Employee employee : employees) {
+            if (employee != null) {
+                System.out.println(employee.getNameFull());
             }
         }
     }
