@@ -3,6 +3,7 @@ package courseWork;
 import java.util.Objects;
 
 public class Employee {
+
     private final String nameFull;
     private int department;
     private double salary;
