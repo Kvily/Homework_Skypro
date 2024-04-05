@@ -1,19 +1,24 @@
 package course2.lesson3_polymorphism_interfaces;
 
-public class Truck {
-
-    public String modelName;
-    public int wheelsCount;
-
+public class Truck extends Transport {
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
-
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    @Override
+    public void service() {
+        super.service();
+        checkEngine();
+        checkTrailer();
     }
 }
