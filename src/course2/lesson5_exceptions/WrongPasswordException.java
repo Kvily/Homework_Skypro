@@ -2,6 +2,6 @@ package course2.lesson5_exceptions;
 
 public class WrongPasswordException extends RuntimeException {
     public WrongPasswordException(String message) {
-        System.out.println(message);
+        super(message);
     }
 }
